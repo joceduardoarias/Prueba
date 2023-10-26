@@ -1,0 +1,934 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microservice.Transferencias</name>
+    </assembly>
+    <members>
+        <member name="T:CuentaServiceConsulta.wsObtenerDatosPorCBURequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerDatosPorCBURequest.cbuOrigen">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerDatosPorCBURequest.idTributarioOrigen">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerDatosPorCBURequest.cbuDestino">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerDatosPorCBURequest.moneda">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerDatosPorCBURequest.fiidPagador">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerDatosPorCBURequest.ipOrigen">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerDatosPorCBURequest.datosTarjeta">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsParametrosTarjetaRequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsParametrosTarjetaRequest.fiidEmisorEntidad">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsParametrosTarjetaRequest.numeroTarjeta">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.getCuentaPorPBFResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.getCuentaPorPBFResponse.respuestaGetCuentaPorPBF">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsGetCuentaPorPBFResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorPBFResponse.cuentaCBU">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsCuentaCBU">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCBU.cbu">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsCuenta">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuenta.estado">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuenta.tipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuenta.numeroCuentaPBF">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuenta.tipoPersona">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuenta.numeroCuentaBancaria">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuenta.titulares">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuenta.entidadBancaria">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsTitular">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsTitular.idTributario">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsTitular.denominacion">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsEntidadBancaria">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsEntidadBancaria.fiid">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsEntidadBancaria.nombre">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsEntidadBancaria.nombreAbreviado">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsEntidadBancaria.tipoRedBancaria">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsTipoRedBancaria">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsTipoRedBancaria.codigo">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsTipoRedBancaria.descripcion">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsTipoRedBancaria.descripcionAbreviada">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsAbstractResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsAbstractResponse.cabecera">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsAbstractResponse.codigoResultado">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsAbstractResponse.descripcionResultado">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsHeaderResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsHeaderResponse.timeStamp">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsObtenerCuentasPorCUITResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerCuentasPorCUITResponse.cuentas">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsCuentaCUIT">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCUIT.cbu">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCUIT.alias">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCUIT.tipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCUIT.numeroCuentaPBF">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCUIT.tipoPersona">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCUIT.numeroCuentaBancaria">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCUIT.titulares">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsGetCuentaPorDocumentoResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorDocumentoResponse.cuentasCBU">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsObtenerCuentasDepositoChequesResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerCuentasDepositoChequesResponse.cuentas">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsCuentaCheque">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCheque.tipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaCheque.numeroCuenta">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsGetDatoTributarioPorCBUResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetDatoTributarioPorCBUResponse.datoTributario">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsDatoTributario">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsDatoTributario.estado">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsDatoTributario.tipoPersona">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsDatoTributario.titulares">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsGetCuentaPorCBUResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorCBUResponse.cuenta">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsObtenerDatosPorCBUResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerDatosPorCBUResponse.mismoTitular">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.getCuentaPorPBF">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.getCuentaPorPBF.requerimientogetCuentaPorPBF">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsGetCuentaPorPBFRequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorPBFRequest.fiidCuenta">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorPBFRequest.tipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorPBFRequest.numeroCuenta">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsTarjetaAbstractRequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsTarjetaAbstractRequest.fiidPagador">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsTarjetaAbstractRequest.datosTarjeta">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsAbstractRequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsAbstractRequest.cabecera">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsAbstractRequest.tipoTerminal">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsHeaderRequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsHeaderRequest.idRequerimiento">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsHeaderRequest.ipCliente">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsHeaderRequest.timeStamp">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsHeaderRequest.idEntidad">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsHeaderRequest.canal">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsObtenerCuentasPorCUITRequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerCuentasPorCUITRequest.idTributario">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerCuentasPorCUITRequest.FIIDEmisorEntidad">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsGetCuentaPorDocumentoRequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorDocumentoRequest.documento">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorDocumentoRequest.fiidCuenta">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorDocumentoRequest.fiidPagador">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorDocumentoRequest.fiidEmisorEntidad">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsDocumentoRequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsDocumentoRequest.tipo">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsDocumentoRequest.numero">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsObtenerCuentasDepositoChequesRequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerCuentasDepositoChequesRequest.idTributario">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsObtenerCuentasDepositoChequesRequest.FIIDEmisorEntidad">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsGetDatoTributarioPorCBURequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetDatoTributarioPorCBURequest.cbu">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsGetCuentaPorCBURequest">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorCBURequest.cbu">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorCBURequest.moneda">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsGetCuentaPorCBURequest.ipOrigen">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.obtenerCuentasPorCUITResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.obtenerCuentasPorCUITResponse.respuestaObtenerCuentasPorCUITResponse">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.obtenerCuentasPorCUIT">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.obtenerCuentasPorCUIT.requerimientoObtenerCuentasPorCUIT">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.wsCuentaPorDocumento">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaPorDocumento.estadoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaPorDocumento.tipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaPorDocumento.numeroCuentaBancaria">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.wsCuentaPorDocumento.cbu">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.getCuentaPorDocumentoResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.getCuentaPorDocumentoResponse.respuestaGetCuentaPorDocumento">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.getCuentaPorDocumento">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.getCuentaPorDocumento.requerimientogetCuentaPorDocumento">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.obtenerCuentasDepositoChequesResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.obtenerCuentasDepositoChequesResponse.respuestaObtenerCuentasDepositoCheques">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.obtenerCuentasDepositoCheques">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.obtenerCuentasDepositoCheques.requerimientoObtenerCuentasDepositoCheques">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.getDatoTributarioPorCBUResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.getDatoTributarioPorCBUResponse.respuestaGetDatoTributarioPorCBU">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.getDatoTributarioPorCBU">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.getDatoTributarioPorCBU.requerimientogetDatoTributarioPorCBU">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.getCuentaPorCBUResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.getCuentaPorCBUResponse.respuestaGetCuentaPorCBU">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.getCuentaPorCBU">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.getCuentaPorCBU.requerimientogetCuentaPorCBU">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.obtenerDatosCBUResponse">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.obtenerDatosCBUResponse.respuestaObtenerDatosCBU">
+            <remarks/>
+        </member>
+        <member name="T:CuentaServiceConsulta.obtenerDatosCBU">
+            <remarks/>
+        </member>
+        <member name="P:CuentaServiceConsulta.obtenerDatosCBU.requerimientoObtenerDatosCBU">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsComprobanteRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobanteRequest.obtenerDatosComprobantes">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosComprobanteRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosComprobanteRequest.numeroTarjeta">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosComprobanteRequest.fechaTrxDesde">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosComprobanteRequest.fechaTrxHasta">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosComprobanteRequest.syskey">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsComprobante">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.fechaNegocio">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.fechaHoraTRX">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.horaTRX">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.cuentaOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.cuentaDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.nombreCDIOriginante">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.numeroTransaccion">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.terminalOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.entidadFinancieraPagadora">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.tarjeta">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.sequence">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.importe">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.motivo">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.referencia">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.tipoCuentaDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.mismoTitular">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.numeroCBUOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.entidadCBUOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.numeroCuentaCBUOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.cbuDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.tipoPersona">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.redDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.bancoDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.tipoCuentaOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.cdiOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.nombreDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.cdiDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.codigoCanal">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobante.tipoTrx">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsHeaderResponse">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsHeaderResponse.timeStamp">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsAbstractResponse">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsAbstractResponse.cabeceraResponse">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsAbstractResponse.codigoResultado">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsAbstractResponse.descripcionResultado">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsTransferenciaISResponse">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaISResponse.numeroTransaccion">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsTransferenciaResponse">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaResponse.numeroTransaccion">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsTransferenciaPEIResponse">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaPEIResponse.traceNumber">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaPEIResponse.timeStamp">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaPEIResponse.referenceNumber">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsComprobantesResponse">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsComprobantesResponse.comprobantes">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosReversaTransferenciaRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosReversaTransferenciaRequest.numeroTarjeta">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosReversaTransferenciaRequest.identificador">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.hbnet">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.numeroTarjeta">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.pin">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.tipoTerminal">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.tipoCuentaOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.numeroCuentaOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.tipoCuentaDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.numeroCuentaDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.importe">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.monedaTransaccion">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.enviaMailDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaCuentaPropiaRequest.email">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosDatosDispositivo">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosDispositivo.soloONUS">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosDispositivo.tipoencripcion">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosDatosEcommerce">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosEcommerce.codComercio">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosEcommerce.nombreFantasia">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosEcommerce.razonSocial">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosEcommerce.rubroMCC">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosDatosOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosOrigen.nroDocumentOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosOrigen.tipoDocumentoOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosOrigen.denominacionOrigen">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosCVC2">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCVC2.cvc2">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCVC2.fechaVencimiento">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosEntryMode">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosEntryMode.mode">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosEntryMode.pinCap">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosTrack">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTrack.track1">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTrack.track2">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosTransferenciaPEIRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.referenceNumber">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.fiidPagador">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.token">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.parametrosTrack">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.parametrosEntryMode">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.parametrosCVC2">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.parametrosDatosOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.parametrosDatosEcommerce">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.parametrosDatosDispositivo">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.tipoCanal">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaPEIRequest.tipoTransferencia">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosDatosClave">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosClave.numeroClave">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosDatosClave.tipoClave">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosTitularDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTitularDestinatario.tipoPersona">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTitularDestinatario.idTributario">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTitularDestinatario.denominacion">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTitularDestinatario.mismoTitular">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTitularDestinatario.email">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosCuentaDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaDestino.cbu">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaDestino.tipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaDestino.cuentaPBF">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaDestino.cuentaBancaria">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaDestino.estado">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaDestino.titularDestinatario">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosCuentaOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaOrigen.tipoCuenta">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaOrigen.cuentaPBF">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaOrigen.idTributario">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosCuentaOrigen.denominacion">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosTransferenciaRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.hbnet">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.numeroTarjeta">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.pin">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.tipoTerminal">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.cuentaOrigen">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.cuentaDestino">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.importe">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.monedaTransaccion">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.motivo">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.referencia">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.descripcionBreve">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.enviaMailDestinatario">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.fiidPagador">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaRequest.idCanal">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsParametrosTransferenciaDiferidaRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsParametrosTransferenciaDiferidaRequest.datosClave">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsHeaderRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsHeaderRequest.idRequerimiento">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsHeaderRequest.ipCliente">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsHeaderRequest.timeStamp">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsHeaderRequest.idEntidad">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsHeaderRequest.canal">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsAbstractRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsAbstractRequest.cabeceraRequest">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsReversaTransferenciaRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsReversaTransferenciaRequest.datosReversaTransferencia">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsTransferenciaCuentaPropiaRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaCuentaPropiaRequest.datosTransferenciaCuentaPropia">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsTransferenciaISRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaISRequest.datosTransferencia">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsTransferenciaDiferidaRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaDiferidaRequest.datosTransferenciaDiferida">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsTransferenciaRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaRequest.datosTransferencia">
+            <remarks/>
+        </member>
+        <member name="T:TransfServicesTransf.wsTransferenciaPEIRequest">
+            <remarks/>
+        </member>
+        <member name="P:TransfServicesTransf.wsTransferenciaPEIRequest.datosTransferenciaPEI">
+            <remarks/>
+        </member>
+        <member name="M:Microservice.Transferencias.Wcf.ClientMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="reply"></param>
+            <param name="correlationState"></param>
+        </member>
+        <member name="M:Microservice.Transferencias.Wcf.ClientMessageInspector.BeforeSendRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <param name="channel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microservice.Transferencias.Wcf.Extensions.AddSecurityMessageBehavior``1(System.ServiceModel.ClientBase{``0},System.String,System.String)">
+            <summary>
+            It is valid for BasicHttpBinding and BasicHttpsBinding
+            See https://github.com/dotnet/wcf/blob/master/release-notes/WCF-Web-Service-Reference-notes.md
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="client"></param>
+            <param name="username"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:Microservice.Transferencias.Wcf.Extensions.AddSecurityMessageBehavior``1(System.ServiceModel.ClientBase{``0},System.String,System.String,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="client"></param>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="logger"></param>
+        </member>
+    </members>
+</doc>
